@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First-Time Europe: The No-Regrets Guide</title>
+  <meta name="description" content="A premium first-time Europe guide from a Tour Director. Honest, practical lessons on expectations, tours, trip structure, travel days, pacing, and making the trip actually work." />
+  <style>
+    :root {
+      --bg: #efe5d8;
+      --paper: #fffaf2;
+      --ink: #211f1b;
+      --muted: #6b6157;
+      --line: #dfd2c2;
+      --accent: #7a3f25;
+      --accent-dark: #582a18;
+      --accent-soft: #efe0cf;
+      --green: #344e41;
+      --green-soft: #e5ebe5;
+      --gold: #c08a3d;
+      --white: #fffdf8;
+      --shadow: 0 24px 80px rgba(33, 31, 27, 0.14);
+      --soft-shadow: 0 12px 34px rgba(33, 31, 27, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding-bottom: 88px;
+      background:
+        linear-gradient(90deg, rgba(52, 78, 65, 0.055) 0 1px, transparent 1px 100%),
+        linear-gradient(180deg, #eadccc 0%, var(--bg) 34%, #f9efe5 100%);
+      background-size: 58px 58px, auto;
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.64;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 42px 22px 90px;
+    }
+
+    .product {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: var(--paper);
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      min-height: clamp(620px, 76svh, 820px);
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.72fr);
+      gap: 48px;
+      align-items: end;
+      padding: clamp(42px, 8vw, 86px);
+      border-bottom: 1px solid var(--line);
+      background:
+        linear-gradient(135deg, rgba(255, 250, 242, 0.96), rgba(247, 232, 216, 0.96)),
+        radial-gradient(circle at 86% 16%, rgba(122, 63, 37, 0.12), transparent 32%);
+    }
+
+    .kicker,
+    .module-label,
+    .chapter-number,
+    .tracker-label,
+    .pill {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .kicker {
+      color: var(--accent);
+      font-size: 0.78rem;
+      margin-bottom: 22px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      line-height: 1.02;
+      letter-spacing: -0.035em;
+      text-wrap: balance;
+    }
+
+    h1 {
+      max-width: 780px;
+      font-size: clamp(3rem, 7vw, 6.4rem);
+    }
+
+    .subtitle {
+      max-width: 690px;
+      margin: 28px 0 0;
+      color: var(--muted);
+      font-size: clamp(1.15rem, 2vw, 1.45rem);
+    }
+
+    .hero-card {
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 390px;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--white);
+      box-shadow: var(--soft-shadow);
+    }
+
+    .hero-card p {
+      margin: 0 0 18px;
+      font-size: 1.08rem;
+    }
+
+    .hero-card strong {
+      color: var(--accent-dark);
+    }
+
+    .hero-meta {
+      display: grid;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .pill {
+      display: inline-flex;
+      width: fit-content;
+      padding: 7px 10px;
+      border: 1px solid rgba(122, 63, 37, 0.24);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 0.72rem;
+    }
+
+    .contents {
+      padding: 40px clamp(24px, 7vw, 86px);
+      border-bottom: 1px solid var(--line);
+      background: #f8efe5;
+    }
+
+    .contents h2 {
+      margin-bottom: 20px;
+      font-size: clamp(1.8rem, 3vw, 2.55rem);
+    }
+
+    .contents-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .contents-grid li {
+      margin: 0;
+    }
+
+    .contents-grid a,
+    .contents-grid span {
+      display: flex;
+      min-height: 142px;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--white);
+      box-shadow: var(--soft-shadow);
+      text-decoration: none;
+    }
+
+    .contents-grid span {
+      color: var(--muted);
+      background: rgba(255, 253, 248, 0.58);
+      box-shadow: none;
+    }
+
+    .contents-grid strong {
+      color: var(--accent);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .contents-grid em {
+      font-size: 1.18rem;
+      font-style: normal;
+      line-height: 1.2;
+    }
+
+    .content {
+      padding: clamp(46px, 8vw, 88px) clamp(24px, 7vw, 86px);
+      counter-reset: chapter;
+    }
+
+    .chapter {
+      display: grid;
+      grid-template-columns: 136px minmax(0, 720px);
+      gap: 44px;
+      max-width: 940px;
+      margin: 0 auto 96px;
+      padding-top: 72px;
+      border-top: 1px solid var(--line);
+      counter-increment: chapter;
+    }
+
+    .chapter:first-child {
+      padding-top: 0;
+      border-top: 0;
+    }
+
+    .chapter:last-child {
+      margin-bottom: 0;
+    }
+
+    .chapter-number {
+      position: sticky;
+      top: 24px;
+      align-self: start;
+      padding-top: 8px;
+      border-top: 3px solid var(--accent);
+      color: var(--accent);
+      font-size: 0.78rem;
+      line-height: 1.35;
+    }
+
+    .chapter-number::after {
+      content: counter(chapter, decimal-leading-zero);
+      display: block;
+      margin-top: 6px;
+      font-size: 2rem;
+      letter-spacing: -0.04em;
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      text-transform: none;
+    }
+
+    .chapter-body > * + * {
+      margin-top: 26px;
+    }
+
+    .chapter-opener {
+      display: grid;
+      gap: 18px;
+      margin-bottom: 34px;
+    }
+
+    .chapter-opener h2 {
+      font-size: clamp(2.2rem, 4.3vw, 4rem);
+    }
+
+    .chapter-opener .lede {
+      max-width: 660px;
+      color: var(--muted);
+      font-size: 1.24rem;
+      margin: 0;
+    }
+
+    .lesson-map {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .lesson-map div {
+      min-height: 116px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--white);
+    }
+
+    .lesson-map strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--accent);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.74rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .lesson-map p {
+      margin: 0;
+      line-height: 1.45;
+    }
+
+    .module {
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--white);
+      box-shadow: var(--soft-shadow);
+    }
+
+    .module h3 {
+      margin-bottom: 16px;
+      color: var(--accent-dark);
+      font-size: clamp(1.45rem, 2.5vw, 2rem);
+    }
+
+    .module p,
+    .field-note p,
+    .tool p,
+    .bottom-line p {
+      margin: 0 0 16px;
+      font-size: 1.08rem;
+    }
+
+    .module p:last-child,
+    .field-note p:last-child,
+    .tool p:last-child,
+    .bottom-line p:last-child {
+      margin-bottom: 0;
+    }
+
+    .module-label {
+      display: block;
+      margin-bottom: 12px;
+      color: var(--accent);
+      font-size: 0.74rem;
+    }
+
+    .field-note {
+      position: relative;
+      padding: 28px 30px;
+      border: 1px solid #d8c8b6;
+      border-radius: 16px;
+      background: #fff7eb;
+    }
+
+    .field-note::before {
+      content: "";
+      position: absolute;
+      inset: 18px auto 18px 0;
+      width: 5px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    .callout {
+      padding: 24px 26px;
+      border-left: 6px solid var(--accent);
+      border-radius: 12px;
+      background: var(--accent-soft);
+      font-size: 1.16rem;
+    }
+
+    .callout p {
+      margin: 0 0 12px;
+    }
+
+    .callout p:last-child {
+      margin-bottom: 0;
+    }
+
+    .tool {
+      padding: 28px;
+      border-radius: 18px;
+      background: var(--green);
+      color: #fffaf2;
+      box-shadow: 0 16px 38px rgba(52, 78, 65, 0.22);
+    }
+
+    .tool .module-label,
+    .tool h3,
+    .tool strong {
+      color: #f4c58a;
+    }
+
+    .tool h3 {
+      margin-bottom: 16px;
+      font-size: clamp(1.5rem, 2.8vw, 2.15rem);
+    }
+
+    .tool-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .tool-card {
+      min-height: 110px;
+      padding: 18px;
+      border: 1px solid rgba(255, 250, 242, 0.2);
+      border-radius: 13px;
+      background: rgba(255, 250, 242, 0.08);
+    }
+
+    .tool-card p {
+      color: #fffaf2;
+      line-height: 1.42;
+    }
+
+    .tool-card strong {
+      display: block;
+      margin-bottom: 8px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.76rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .checklist,
+    .contrast {
+      display: grid;
+      gap: 10px;
+      margin: 18px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .checklist li,
+    .contrast li {
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 11px;
+      background: var(--white);
+      line-height: 1.42;
+    }
+
+    .tool .checklist li {
+      border-color: rgba(255, 250, 242, 0.18);
+      background: rgba(255, 250, 242, 0.08);
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .compare-panel {
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--white);
+      box-shadow: var(--soft-shadow);
+    }
+
+    .compare-panel strong {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--accent);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .bottom-line {
+      padding: 30px;
+      border-radius: 18px;
+      background: #211f1b;
+      color: #fffaf2;
+    }
+
+    .bottom-line strong {
+      color: #f4c58a;
+    }
+
+    .pull {
+      margin: 0;
+      padding: 0 0 0 22px;
+      border-left: 4px solid var(--accent);
+      color: var(--muted);
+      font-size: 1.25rem;
+      font-style: italic;
+    }
+
+    .arrow {
+      color: var(--accent);
+      font-weight: 800;
+    }
+
+    .tracker {
+      position: fixed;
+      left: 50%;
+      bottom: 18px;
+      z-index: 50;
+      display: grid;
+      grid-template-columns: minmax(190px, auto) minmax(220px, 360px);
+      gap: 18px;
+      align-items: center;
+      width: min(calc(100% - 32px), 840px);
+      padding: 12px 14px;
+      border: 1px solid rgba(223, 210, 194, 0.9);
+      border-radius: 999px;
+      background: rgba(255, 250, 242, 0.9);
+      box-shadow: 0 18px 52px rgba(33, 31, 27, 0.18);
+      backdrop-filter: blur(16px);
+      transform: translateX(-50%);
+    }
+
+    .tracker-label {
+      min-width: 0;
+      color: var(--accent);
+      font-size: 0.72rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .tracker-label span {
+      color: var(--muted);
+    }
+
+    .tracker-rail {
+      height: 7px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(223, 210, 194, 0.95);
+    }
+
+    .tracker-fill {
+      display: block;
+      width: 0%;
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--accent), var(--green));
+    }
+
+    .tracker-dots {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 6px;
+      margin-top: 8px;
+    }
+
+    .tracker-dot {
+      display: block;
+      height: 4px;
+      border-radius: 999px;
+      background: rgba(122, 63, 37, 0.22);
+      text-indent: -999px;
+      overflow: hidden;
+    }
+
+    .tracker-dot.is-active {
+      background: var(--accent);
+    }
+
+    .tracker-dot.is-read {
+      background: var(--green);
+    }
+
+    @media (max-width: 920px) {
+      .hero {
+        min-height: auto;
+        grid-template-columns: 1fr;
+      }
+
+      .contents-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .chapter {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .chapter-number {
+        position: static;
+        width: 122px;
+      }
+
+      .lesson-map,
+      .tool-grid,
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding-bottom: 122px;
+        background-size: 38px 38px, auto;
+      }
+
+      .wrap {
+        padding: 0;
+      }
+
+      .product {
+        border-radius: 0;
+        border-left: 0;
+        border-right: 0;
+      }
+
+      .hero,
+      .contents,
+      .content {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+
+      .hero {
+        padding-top: 44px;
+        padding-bottom: 42px;
+      }
+
+      h1 {
+        max-width: 11ch;
+        font-size: clamp(2.25rem, 12vw, 3.25rem);
+      }
+
+      .contents-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contents-grid a,
+      .contents-grid span {
+        min-height: 96px;
+      }
+
+      .chapter {
+        margin-bottom: 74px;
+        padding-top: 52px;
+      }
+
+      .module,
+      .field-note,
+      .tool,
+      .bottom-line {
+        padding: 22px;
+      }
+
+      .tracker {
+        bottom: 10px;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        width: calc(100% - 20px);
+        border-radius: 18px;
+      }
+
+      .tracker-label {
+        font-size: 0.66rem;
+      }
+    }
+
+    @media print {
+      body {
+        padding-bottom: 0;
+        background: white;
+      }
+
+      .wrap {
+        max-width: none;
+        padding: 0;
+      }
+
+      .product {
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      .tracker {
+        display: none;
+      }
+
+      .chapter,
+      .module,
+      .field-note,
+      .tool,
+      .bottom-line {
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <article class="product">
+      <header class="hero">
+        <div>
+          <div class="kicker">Paid guide · Tour Director field notes</div>
+          <h1>First-Time Europe: The No-Regrets Guide</h1>
+          <p class="subtitle">How to get the foundations right before you leave home, so the trip actually works once you’re on the road.</p>
+        </div>
+        <aside class="hero-card" aria-label="Guide promise">
+          <div>
+            <p><strong>This is not a top 10 list.</strong></p>
+            <p>It’s the stuff people usually learn the hard way: arrival days, luggage, tours, pacing, travel days, expectations, and why a trip that looks brilliant on paper can feel exhausting in real life.</p>
+          </div>
+          <div class="hero-meta">
+            <span class="pill">Private web guide</span>
+            <span class="pill">PDF-ready structure</span>
+            <span class="pill">Built from real departures</span>
+          </div>
+        </aside>
+      </header>
+
+      <nav class="contents" aria-label="Guide contents">
+        <h2>Inside the guide</h2>
+        <ol class="contents-grid">
+          <li><a href="#before-you-go"><strong>01</strong><em>Before You Go</em></a></li>
+          <li><a href="#the-pattern"><strong>02</strong><em>The Pattern</em></a></li>
+          <li><a href="#tour-vs-independent"><strong>03</strong><em>Tour vs Independent</em></a></li>
+          <li><a href="#trip-structure"><strong>04</strong><em>Trip Structure</em></a></li>
+          <li><a href="#structuring-a-day"><strong>05</strong><em>Structuring a Day</em></a></li>
+          <li><a href="#arrival-day"><strong>06</strong><em>Arrival Day</em></a></li>
+          <li><span><strong>07</strong><em>Packing &amp; Luggage Reality</em></span></li>
+          <li><span><strong>08</strong><em>Expectations vs Reality</em></span></li>
+        </ol>
+      </nav>
+
+      <div class="content">
+        <section class="chapter" id="before-you-go">
+          <div class="chapter-number">Chapter</div>
+          <div class="chapter-body">
+            <div class="chapter-opener">
+              <h2>Before You Go</h2>
+              <p class="lede">Europe isn’t the kind of trip you just “figure out as you go”. You can. People do. But after running tours for years, you start to see what that actually looks like in real life.</p>
+              <div class="lesson-map">
+                <div><strong>What people think</strong><p>“We’ll land, drop the bags, and work it out.”</p></div>
+                <div><strong>What actually happens</strong><p>The room isn’t ready, the luggage is annoying, and everyone is tired.</p></div>
+                <div><strong>Why it matters</strong><p>The first day sets the tone. Smooth or messy, you feel it.</p></div>
+              </div>
+            </div>
+
+            <div class="field-note">
+              <span class="module-label">Field Notes</span>
+              <p>People arrive exhausted, looking like zombies after their flight. No plan, no thought into how they’ll feel, no idea what to do when their room isn’t ready until 4pm and it’s 10am.</p>
+              <p>Maybe you feel fine. Great. But do you have everything you need to go out for a walk? Take a taxi somewhere for lunch? Sit somewhere? Grab a coffee without opening your suitcase in the hotel lobby?</p>
+              <p>Being prepared doesn’t lock you in. It makes you flexible.</p>
+            </div>
+
+            <div class="field-note">
+              <span class="module-label">The stuff brochures don’t show</span>
+              <p>Travel rarely runs perfectly. Delays, queues, waiting around, room not ready, room key not working, taxi taking forever. These things all suck.</p>
+              <p>But they’re part of travel. The social media posts, tour websites, and glossy brochures don’t capture that bit. Travel has ups and downs. The highs wouldn’t matter without the lows.</p>
+            </div>
+
+            <div class="field-note">
+              <span class="module-label">Expectation check</span>
+              <p>Paris syndrome is real. You picture quiet streets, perfect cafés, romantic meals near landmarks. Reality might be 35°C heat, crowds everywhere, construction, tour groups, and people trying to sell you frozen water bottles every ten seconds.</p>
+              <p>It’s not quite like the movies. But it can still be brilliant if you know what to expect beforehand.</p>
+            </div>
+
+            <div class="tool">
+              <span class="module-label">Use This</span>
+              <h3>Reality Check Before You Leave</h3>
+              <p>Before you fly, run the boring-but-useful questions. They’re boring at home. They’re expensive and annoying once you’re there.</p>
+              <div class="tool-grid">
+                <div class="tool-card"><strong>Arrival</strong><p>What happens if your room isn’t ready for five hours?</p></div>
+                <div class="tool-card"><strong>Day bag</strong><p>Can you comfortably go out without touching your checked luggage?</p></div>
+                <div class="tool-card"><strong>City pulse</strong><p>Have you checked what’s on in the city that weekend?</p></div>
+                <div class="tool-card"><strong>Body</strong><p>Can you walk 5,000–10,000 steps without it ruining your mood?</p></div>
+              </div>
+            </div>
+
+            <div class="bottom-line">
+              <p><strong>Bottom line:</strong> knowledge changes everything. Not more information. Just the stuff that actually makes the difference when you’re there.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="chapter" id="the-pattern">
+          <div class="chapter-number">Chapter</div>
+          <div class="chapter-body">
+            <div class="chapter-opener">
+              <h2>The Pattern</h2>
+              <p class="lede">After a while, you notice the same mistakes over and over again. Different people. Same outcome.</p>
+              <div class="lesson-map">
+                <div><strong>What people think</strong><p>More planning means fewer mistakes.</p></div>
+                <div><strong>What actually happens</strong><p>They overplan the wrong things and underplan the important bits.</p></div>
+                <div><strong>Why it matters</strong><p>Energy goes into avoiding tiny mistakes while the big ones sneak through.</p></div>
+              </div>
+            </div>
+
+            <div class="module">
+              <span class="module-label">The mistake</span>
+              <h3>Overthinking the wrong things</h3>
+              <p>Hours spent choosing restaurants. Head in the phone, checking reviews, trying not to get ripped off, searching for the great deal. Time wasted trying to optimise. Sounds like an oxymoron.</p>
+              <p>That restaurant over the road from the Colosseum? Yeah, it might not be the best restaurant in Rome. But look at that real estate. You’re sitting outside, eating carbonara, looking up at thousands of years of arches and columns.</p>
+              <p>Is the price a rip-off? Not for a lunch you might remember for the rest of your life.</p>
+            </div>
+
+            <div class="field-note">
+              <span class="module-label">Field Notes</span>
+              <p>I see travel blogs say, “Don’t eat on the main square. Go a few streets back and eat like a local.” They’re not wrong. But locals live there. They see these things on the way to work. They didn’t fly 10,000 kilometres to see Rome.</p>
+              <p>An older Italian friend of mine goes to Bologna just to eat. He doesn’t look places up. He doesn’t ask his friends. He walks. He looks. He smells. Do people look happy? Are plates coming back empty? Does it smell good?</p>
+              <p>That’s the skill: knowing when to think with your head, and when to use your senses.</p>
+            </div>
+
+            <div class="module">
+              <span class="module-label">The other side</span>
+              <h3>Underplanning the important bits</h3>
+              <p>Arrival day. Travel days. How long things actually take. Google Maps says the drive is 45 minutes, but that assumes you know where you’re going, where to park, how toll roads work, whether there are traffic restrictions, and whether you’re even allowed to drive where the map is sending you.</p>
+              <p>You don’t. You’re figuring it out in real time.</p>
+            </div>
+
+            <div class="field-note">
+              <span class="module-label">Packing reality</span>
+              <p>It’s great to dress up and get nice photos. Of course. But those photos probably make up 1% of your trip. Don’t let the nice clothes take up 50% of your suitcase.</p>
+              <p>Europe means walking. Streets from the Middle Ages. Cars restricted. Coaches dropping you close, but not always at the door. In the months before your trip, think European: walk more, drive less. Stairs. Hills. Uneven ground. You don’t need to become a marathon runner. Just be comfortable moving.</p>
+            </div>
+
+            <div class="tool">
+              <span class="module-label">Use This</span>
+              <h3>The Planning Filter</h3>
+              <p>Before spending another hour researching, ask whether this decision will actually change the trip.</p>
+              <div class="tool-grid">
+                <div class="tool-card"><strong>Worth planning</strong><p>Arrival day, luggage, transport, pace, hotel location, major timed entries.</p></div>
+                <div class="tool-card"><strong>Worth relaxing</strong><p>Most lunches, café stops, short wandering time, the “perfect” photo spot.</p></div>
+              </div>
+            </div>
+
+            <div class="bottom-line">
+              <p><strong>Bottom line:</strong> most people don’t need more travel hacks. They need to stop optimising the wrong things.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="chapter" id="tour-vs-independent">
+          <div class="chapter-number">Chapter</div>
+          <div class="chapter-body">
+            <div class="chapter-opener">
+              <h2>Tour vs Independent</h2>
+              <p class="lede">This is one of the biggest decisions you’ll make, and one of the most misunderstood. Tours aren’t good or bad. Independent travel isn’t good or bad. They’re tools.</p>
+              <div class="lesson-map">
+                <div><strong>What people think</strong><p>Tour or independent is a personality test.</p></div>
+                <div><strong>What actually happens</strong><p>The wrong choice makes the whole trip harder than it should be.</p></div>
+                <div><strong>Why it matters</strong><p>You’re choosing between freedom, efficiency, responsibility, and mental space.</p></div>
+              </div>
+            </div>
+
+            <div class="module">
+              <span class="module-label">The shift</span>
+              <h3>A tour is someone else handling the logistics</h3>
+              <p>Forget the brochure for a second. A tour is transport sorted, hotels sorted, timing handled, route already figured out. You’re paying to take that stress away.</p>
+              <p>Control is great. We all want control. But with control comes responsibility. The question is whether you actually want to be responsible for everything that goes into executing a European trip.</p>
+            </div>
+
+            <div class="field-note">
+              <span class="module-label">Field Notes</span>
+              <p>Want to cook something new at home, let’s say a curry, and you’ve never cooked one before. Where do you start? Ingredients? Spices? Oils? Equipment? What temperature? What cooks first? How long? Does it look right?</p>
+              <p>Or do you order from a good restaurant and avoid the stress?</p>
+              <p>Am I saying it’s bad to learn? No. But when it’s your first curry, or you don’t do it often, let the people who know what they’re doing handle the stress and learn as you go.</p>
+            </div>
+
+            <div class="tool">
+              <span class="module-label">Use This</span>
+              <h3>How to Read a Tour Itinerary</h3>
+              <p>Most people look at the places. That’s not enough. You need to look at the cadence.</p>
+              <div class="tool-grid">
+                <div class="tool-card"><strong>Count nights</strong><p>How many one-night stops? How many two-night stops? Where do you actually settle?</p></div>
+                <div class="tool-card"><strong>Check distance</strong><p>Dots on a map look close. Berlin to Amsterdam still takes a full day with stops.</p></div>
+                <div class="tool-card"><strong>Compare pace</strong><p>Five countries in eight days can work if you treat it like a taster, not a slow holiday.</p></div>
+                <div class="tool-card"><strong>Ask honestly</strong><p>Do you want freedom, or do you want efficiency and less thinking?</p></div>
+              </div>
+            </div>
+
+            <div class="field-note">
+              <span class="module-label">Time is the value</span>
+              <p>After running these tours for years, I’ve realised that even with my knowledge and experience, there’s no way I could cover everything a good tour covers if I tried to replicate it on my own.</p>
+              <p>Arrive into Rome and visit the Colosseum that afternoon? On a tour, your driver drops you close, your luggage is safe on the coach, the visit has been arranged months ahead, and approved guides are ready. On your own, you’re thinking about the car, parking, luggage, tickets, timing, traffic restrictions, and how to get back out again.</p>
+              <p>Time is money. If a tour saves you a chunk of time and a chunk of stress, that’s the value.</p>
+            </div>
+
+            <div class="two-col">
+              <div class="compare-panel">
+                <strong>Independent travel</strong>
+                <p>More freedom. More flexibility. More responsibility. More room for mistakes.</p>
+              </div>
+              <div class="compare-panel">
+                <strong>Tours</strong>
+                <p>Less freedom. More structure. Less thinking. More efficient use of time.</p>
+              </div>
+            </div>
+
+            <div class="tool">
+              <span class="module-label">Quick Check</span>
+              <h3>Should you book a tour?</h3>
+              <div class="tool-grid">
+                <div class="tool-card"><strong>Good fit</strong><p>You have limited time, don’t enjoy logistics, want context, or it’s your first time.</p></div>
+                <div class="tool-card"><strong>Bad fit</strong><p>You hate structure, want deep slow travel, or enjoy figuring things out yourself.</p></div>
+              </div>
+            </div>
+
+            <div class="bottom-line">
+              <p><strong>Bottom line:</strong> tours aren’t better. Independent travel isn’t better. The wrong choice is what hurts.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="chapter" id="trip-structure">
+          <div class="chapter-number">Chapter</div>
+          <div class="chapter-body">
+            <div class="chapter-opener">
+              <h2>Trip Structure</h2>
+              <p class="lede">This is where people really get it wrong. They build a list of places, then try to connect them, and mistake that for a trip.</p>
+              <div class="lesson-map">
+                <div><strong>What people think</strong><p>Pick the places first. Connect them later.</p></div>
+                <div><strong>What actually happens</strong><p>The trip becomes packing, moving, catching up, and never settling.</p></div>
+                <div><strong>Why it matters</strong><p>Bad structure doesn’t look bad on paper. It feels bad when you’re in it.</p></div>
+              </div>
+            </div>
+
+            <div class="module">
+              <span class="module-label">The shift</span>
+              <h3>A trip is not just where you go</h3>
+              <p>A trip is how it flows. The cadence. How often you move. How often you pack and unpack. How much downtime you have. How tired you feel by day four or five. How much work you need to do to keep things going once you’re there.</p>
+            </div>
+
+            <div class="field-note">
+              <span class="module-label">Field Notes</span>
+              <p>Told yourself “I’ll sort that out once I’m there”? How likely are you going to feel like doing that after two or three days behind the steering wheel in a new place, or rushing from platform to platform on trains?</p>
+              <p>Think you’ll get that planning done on the train? What if it’s packed and loud? Kids, school groups, busy summer travel. Not every train ride is like that, but plenty are.</p>
+              <p>What you think you’ll manage later might not happen later.</p>
+            </div>
+
+            <div class="field-note">
+              <span class="module-label">Travel days are not empty space</span>
+              <p>You look at a map and think, “That’s only a few hundred kilometres.” Google says 2.5 hours.</p>
+              <p>What it actually is: packing bags, checking out, settling tabs, dropping keys, getting to the station or car, waiting, travelling, arriving, getting to the hotel, checking in, settling again.</p>
+              <p>What looks like 2.5 hours of travel can turn into a full day of energy.</p>
+            </div>
+
+            <div class="field-note">
+              <span class="module-label">Flight vs train reality</span>
+              <p>London to Paris. The flight might be 40 minutes. The train is around 90 minutes. You’d take the flight every time, right?</p>
+              <p>Well, think about getting to Heathrow from central London, arriving early for check-in and security, then landing at Charles de Gaulle and getting into Paris. Suddenly that 40 minute flight is a 6 hour travel experience.</p>
+              <p>The train might look more expensive than the flight, but St Pancras is central, Gare du Nord is central, and the whole experience can be smoother. Every case is different. That’s the point: you have to think about the whole day, not the headline time.</p>
+            </div>
+
+            <div class="tool">
+              <span class="module-label">Use This</span>
+              <h3>The Pace Test</h3>
+              <p>Before you get excited by the map, test the structure.</p>
+              <div class="tool-grid">
+                <div class="tool-card"><strong>Travel days</strong><p>How many days are mostly movement, even if they don’t look like it?</p></div>
+                <div class="tool-card"><strong>One-night stops</strong><p>How many times do you arrive, sleep, and leave?</p></div>
+                <div class="tool-card"><strong>Recovery</strong><p>Where is the day that lets you catch up?</p></div>
+                <div class="tool-card"><strong>Day five</strong><p>Will this still feel good when you’re not fresh anymore?</p></div>
+              </div>
+            </div>
+
+            <div class="module">
+              <span class="module-label">The silent killer</span>
+              <h3>One-night stops</h3>
+              <p>“Just one night in Venice.” “Just one night in Florence.” Sounds efficient.</p>
+              <p>What it actually feels like: arrive mid or late afternoon, rush to see something, dinner, back to hotel, pack again. You barely experience it. Worse, you never settle.</p>
+            </div>
+
+            <div class="tool">
+              <span class="module-label">Simple framework</span>
+              <h3>Build around pace</h3>
+              <div class="tool-grid">
+                <div class="tool-card"><strong>Fast</strong><p>Lots of movement. More highlights. Treat it like a taster.</p></div>
+                <div class="tool-card"><strong>Medium</strong><p>Balance. Some movement, some breathing room.</p></div>
+                <div class="tool-card"><strong>Slow</strong><p>Fewer places. Deeper experience. More rhythm.</p></div>
+                <div class="tool-card"><strong>Rule</strong><p>Start with how long you have, decide pace, then build around that.</p></div>
+              </div>
+            </div>
+
+            <div class="bottom-line">
+              <p><strong>Bottom line:</strong> you don’t regret not seeing one more place. You regret being too tired to enjoy the ones you were in.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="chapter" id="structuring-a-day">
+          <div class="chapter-number">Chapter</div>
+          <div class="chapter-body">
+            <div class="chapter-opener">
+              <h2>Structuring a Day</h2>
+              <p class="lede">People don’t usually ruin trips because they pick the wrong destinations. They ruin them with bad days — the stuff in between the highlights.</p>
+              <div class="lesson-map">
+                <div><strong>What people think</strong><p>“We’ll do this in the morning, that in the afternoon, and something else at night.”</p></div>
+                <div><strong>What actually happens</strong><p>The day fills with movement, luggage, food problems, queues, and decision fatigue.</p></div>
+                <div><strong>Why it matters</strong><p>You don’t remember the spreadsheet. You remember how the day felt.</p></div>
+              </div>
+            </div>
+
+            <div class="module">
+              <span class="module-label">The real problem</span>
+              <h3>Bad days derail good trips</h3>
+              <p>People don’t ruin trips because they pick the wrong destinations.</p>
+              <p>They ruin them with bad days.</p>
+              <p>The things in between the destinations — the movement, the waiting, the rushing, the food, the luggage, the “we’ll just squeeze this in” thinking — that’s what quietly derails people.</p>
+              <p>You can bake a beautiful loaf of bread, slice it perfectly, and then ruin the sandwich by stuffing it with ham, pepperoni, chicken, tomato sauce, mayonnaise, mustard, onions and jam.</p>
+              <p>More filling doesn’t always make a better sandwich.</p>
+              <p>Same with travel days.</p>
+            </div>
+
+            <div class="callout">
+              <p>👉 A day is not just empty space waiting to be filled.</p>
+              <p>👉 It has a limit.</p>
+            </div>
+
+            <div class="field-note">
+              <span class="module-label">Field note: Paris to Lucerne</span>
+              <p>Paris to Lucerne sounds simple enough.</p>
+              <p>Breakfast in Paris, get away early, arrive in Lucerne by the afternoon. You’re moving from the French capital towards the Swiss Alps. Sounds beautiful. Sounds efficient.</p>
+              <p>On paper you start thinking: maybe something in the morning, travel, then a walk by the lake, then dinner.</p>
+              <p>Looks efficient.</p>
+              <p>Feels like chaos if you haven’t respected the day.</p>
+            </div>
+
+            <div class="module">
+              <span class="module-label">What people forget</span>
+              <h3>An early start starts the night before</h3>
+              <p>For starters, an early start means an early night.</p>
+              <p>If you’re driving or navigating the next day, that matters. Even if you’re taking public transport, there’s no magic coach outside the hotel with your name on it.</p>
+              <p>Someone has to go get the car, or you’re getting a taxi to the car, bus station or train station.</p>
+              <p>Bus leaves at 8:40?</p>
+              <p>You’ll want to be there early enough to make sure you’ve got the right station, the right platform, the right luggage plan, and enough buffer for the taxi actually showing up.</p>
+              <p>And Paris traffic at 8am? Good luck pretending that isn’t a factor.</p>
+            </div>
+
+            <div class="field-note">
+              <span class="module-label">Field note: The lunch problem</span>
+              <p>Okay, you made it. You’re on the way.</p>
+              <p>What about lunch?</p>
+              <p>Don’t tell me you were thinking of stealing from the breakfast room of the hotel.</p>
+              <p>I won’t tell anyone, but eating makeshift stolen soggy breakfast sandwiches gets old quick.</p>
+              <p>Most public transport doesn’t factor in a lunch stop. It runs when it runs. You sort out the rest.</p>
+              <p>Changing trains with 45 minutes between arrival and departure? Sounds like lunch. Then the first train is delayed five or ten minutes. Now you’re moving between platforms with luggage, looking for food, maybe needing the bathroom, touching every common surface known to mankind, and eating a rushed sandwich on the go.</p>
+              <p>Romantic? Not quite.</p>
+            </div>
+
+            <div class="field-note">
+              <span class="module-label">Field note: Arrival reality</span>
+              <p>You make it to the next city.</p>
+              <p>How are you feeling?</p>
+              <p>Relaxed? Prepared? Ready to enjoy the evening?</p>
+              <p>Maybe. But maybe not.</p>
+              <p>Public transport rarely organises itself around hotel check-in time. You’re either too early and now dealing with luggage storage, or later than expected and suddenly the afternoon has disappeared.</p>
+              <p>Dropping luggage at the hotel sounds easy until you realise you still have backpacks, valuables, passports, medication, chargers, and whatever else you don’t want disappearing from a storage room.</p>
+              <p>So now the route becomes transport hub → hotel → sightseeing → hotel to freshen up → back out again.</p>
+              <p>Depending where the hotel is, that may be fine.</p>
+              <p>Or it may quietly eat the day.</p>
+            </div>
+
+            <div class="module">
+              <span class="module-label">The hotel trade-off</span>
+              <h3>Convenience costs money</h3>
+              <p>Staying walking distance from everything sounds great.</p>
+              <p>It usually costs more.</p>
+              <p>Staying further out saves money.</p>
+              <p>Now taxis add up, public transport matters more, and going back out after a long travel day becomes a bigger decision.</p>
+              <p>And if you stay right beside the sights because it feels convenient, remember that other people also like being near those sights. At night. Early in the morning. With noise.</p>
+              <p>There is almost always a trade-off.</p>
+            </div>
+
+            <div class="field-note">
+              <span class="module-label">Field note: How tours make the same day feel different</span>
+              <p>How do tours do it then?</p>
+              <p>They don’t magically remove distance. They organise the day differently.</p>
+              <p>The hotel may be chosen with the route in mind. The drive is broken up properly. The coach becomes a controlled space. You’re not watching your suitcase at the end of a train carriage or wondering whether you’re on the right platform.</p>
+              <p>Your Tour Director keeps you informed of drive times, gives you enough context, then lets you relax.</p>
+              <p>By the time you arrive into Lucerne, you’ve been prepped. You know what’s happening. You can step off the coach and actually use your energy on the destination.</p>
+              <p>Then the driver stays with the coach, the heavier items can stay on board, and the check-in may already be handled. No lining up at reception with passports and credit cards while everyone is tired.</p>
+              <p>Am I biased towards tours? If they’re the right choice for you, yes.</p>
+              <p>If you’re prepared to deal with the moving parts of independent travel and allow time for them, then independent travel can be brilliant too.</p>
+              <p>That’s what this guide is about: opening the curtains on what you actually need to think about.</p>
+            </div>
+
+            <div class="tool">
+              <span class="module-label">Core idea</span>
+              <h3>Energy matters more than time</h3>
+              <p>You don’t feel this at the start of the day.</p>
+              <p>You feel it at 3pm… when something simple suddenly feels like effort.</p>
+              <div class="tool-grid">
+                <div class="tool-card"><strong>Morning</strong><p>“Let’s add one more thing.”</p></div>
+                <div class="tool-card"><strong>Afternoon</strong><p>“I can’t be bothered moving again.”</p></div>
+                <div class="tool-card"><strong>On paper</strong><p>Travel looks clean and contained.</p></div>
+                <div class="tool-card"><strong>In reality</strong><p>It bleeds into everything around it.</p></div>
+              </div>
+            </div>
+
+            <div class="field-note">
+              <span class="module-label">Field note: Food, sleep, routine</span>
+              <p>That assumes you’re eating properly, sleeping properly, and vaguely in a routine.</p>
+              <p>Living off croissants for breakfast, pasta for lunch and pizza for dinner catches up with you. Quickly.</p>
+              <p>Add planning, coordinating, adjusting, remembering what’s next — you’re going to feel it.</p>
+            </div>
+
+            <div class="tool">
+              <span class="module-label">Use This</span>
+              <h3>The Three-Part Day</h3>
+              <p>For normal sightseeing days, don’t build a monster sandwich. Build a day that can breathe.</p>
+              <div class="tool-grid">
+                <div class="tool-card"><strong>One anchor</strong><p>The main thing the day is built around. Museum, major sight, guided visit, neighbourhood, or planned experience.</p></div>
+                <div class="tool-card"><strong>One flexible extra</strong><p>Something nearby or easy that you can do if energy and timing allow.</p></div>
+                <div class="tool-card"><strong>Protected space</strong><p>Food, rest, wandering, coffee, doing nothing, or just being where you are.</p></div>
+                <div class="tool-card"><strong>The rule</strong><p>If everything depends on perfect timing, you have not planned a good day. You’ve planned a trap.</p></div>
+              </div>
+            </div>
+
+            <div class="module">
+              <span class="module-label">Between cities</span>
+              <h3>How I’d plan a travel day</h3>
+              <p>Don’t pretend travel days are sightseeing days.</p>
+              <p>If you’re moving between cities, that is the day.</p>
+              <p>Get from A to B properly. Save your energy for when you’re actually there.</p>
+            </div>
+
+            <div class="tool">
+              <span class="module-label">Travel day rules</span>
+              <h3>Public transport vs driving</h3>
+              <div class="tool-grid">
+                <div class="tool-card"><strong>Public transport</strong><p>Conserve energy. Don’t rush. Don’t assume lunch, bathrooms, luggage storage and transfers will be easy.</p></div>
+                <div class="tool-card"><strong>Driving</strong><p>Add time. For every hour on Google Maps, mentally add at least ten minutes, then plan proper stops.</p></div>
+                <div class="tool-card"><strong>Driving advantage</strong><p>You can build in one good stop: one town, one sight, one proper break. Try to make it three and it gets messy.</p></div>
+                <div class="tool-card"><strong>Evening rule</strong><p>Don’t plan much that night. You never quite know how the day will land.</p></div>
+              </div>
+            </div>
+
+            <div class="field-note">
+              <span class="module-label">Field note: Driving sounds simple until it isn’t</span>
+              <p>Driving gives you control, but it’s also a skill.</p>
+              <p>If you’re comfortable handling a vehicle on unfamiliar roads and routes, great. But motorway driving is only part of it.</p>
+              <p>Following GPS into cities you don’t know, finding parking, dealing with traffic restrictions, toll roads, signs, fuel, and then trying to enjoy a city approach while slightly tense — that all counts.</p>
+              <p>One proper stop can work beautifully.</p>
+              <p>Two starts to stretch things.</p>
+              <p>Three is usually fantasy unless stress is part of the hobby.</p>
+            </div>
+
+            <div class="bottom-line">
+              <p><strong>Bottom line:</strong> At the end of the day — pun intended — it’s not just what was in the day that matters. It’s how the day made you feel.</p>
+              <p>Stressed, rushed, good start, falling apart by the end?</p>
+              <p>Or informed, paced, fed, and still able to enjoy where you are?</p>
+            </div>
+          </div>
+        </section>
+        <section class="chapter" id="arrival-day">
+          <div class="chapter-number">Chapter</div>
+          <div class="chapter-body">
+
+            <div class="chapter-opener">
+              <h2>Arrival Day</h2>
+              <p class="lede">The first test, and one that can leave a mark. Not because of where you are — but because of how you land into it.</p>
+              <div class="lesson-map">
+                <div><strong>What people think</strong><p>“We’ll land, drop the bags, freshen up and head out.”</p></div>
+                <div><strong>What actually happens</strong><p>You’re tired, the room isn’t ready, you’re carrying everything, and nothing feels simple.</p></div>
+                <div><strong>Why it matters</strong><p>The tone of your trip starts here. Smooth… or slightly off from the beginning.</p></div>
+              </div>
+            </div>
+
+            <div class="module">
+              <span class="module-label">The first reality</span>
+              <h3>You don’t know how you’ll feel</h3>
+              <p>It’s the morning at home, last-minute packing, getting to the airport, the airport itself, the flight, the lack of sleep, landing, immigration, luggage, arrivals hall.</p>
+              <p>Then suddenly:</p>
+              <p>👉 What now?</p>
+            </div>
+
+            <div class="field-note">
+              <span class="module-label">Field note</span>
+              <p>You’ll have a plan.</p>
+              <p>Most people do.</p>
+              <p>And it’s usually the same one:</p>
+              <p>👉 “We’ll just drop the bags and head out.”</p>
+              <p>Head out where?</p>
+              <p>Is the room ready?</p>
+              <p>Do you lie down? Stay up?</p>
+              <p>What time is it back home?</p>
+              <p>Room ready? The bed looks good.</p>
+              <p>Room not ready? Now you’re carrying everything.</p>
+            </div>
+
+            <div class="module">
+              <span class="module-label">Break it</span>
+              <h3>What actually derails the day</h3>
+              <ul class="checklist">
+                <li>Room not ready</li>
+                <li>Room smaller, dirtier, or worse than expected</li>
+                <li>No plan… or a plan too ambitious to even start</li>
+                <li>No energy</li>
+                <li>Carrying everything you own</li>
+              </ul>
+            </div>
+
+            <div class="field-note">
+              <span class="module-label">Field note: The zombie phase</span>
+              <p>You don’t look like a zombie.</p>
+              <p>You feel like one.</p>
+              <p>The adrenaline gets you out of the airport.</p>
+              <p>Fresh air. New place. You made it.</p>
+              <p>Then it drops.</p>
+              <p>Small decisions start stacking up.</p>
+              <p>Where do we go?</p>
+              <p>Is this area fine?</p>
+              <p>Do we ask reception?</p>
+              <p>Do we just walk?</p>
+              <p>And that’s where it starts to wobble.</p>
+            </div>
+
+            <div class="module">
+              <span class="module-label">The fork</span>
+              <h3>The invisible fork in the road</h3>
+              <p>There are two types of arrival days.</p>
+              <ul class="checklist">
+                <li><strong>Controlled</strong> → light, simple, intentional</li>
+                <li><strong>Chaotic</strong> → forced, reactive, draining</li>
+              </ul>
+              <p>You don’t choose this on the day.</p>
+              <p>You choose it in how you think about the day before you arrive.</p>
+            </div>
+
+            <div class="tool">
+              <span class="module-label">Use This</span>
+              <h3>The Arrival Framework</h3>
+              <p>This is not the day to prove anything.</p>
+              <p>No big plans.</p>
+              <div class="tool-grid">
+                <div class="tool-card"><strong>Adjust</strong><p>Hydrate, listen to your body. Don’t crash early.</p></div>
+                <div class="tool-card"><strong>Nap rule</strong><p>If you sleep, set an alarm. 45 minutes max.</p></div>
+                <div class="tool-card"><strong>Walk</strong><p>Keep it light. No pressure. No expectations.</p></div>
+                <div class="tool-card"><strong>Security</strong><p>Know where valuables are. Lock bags. Keep it simple.</p></div>
+              </div>
+              <ul class="checklist">
+                <li>Ask reception for a general direction, not “the best place”</li>
+                <li>Grab a hotel card or note the address</li>
+                <li>Check when food is available as a fallback</li>
+                <li>Pause, look at a map, memorise a couple of streets</li>
+                <li>Don’t walk out holding a map wide open</li>
+              </ul>
+              <p>Go for a walk. No pressure.</p>
+              <p>You might find something great.</p>
+              <p>You might end up back at the hotel.</p>
+              <p>Both are fine.</p>
+            </div>
+
+            <div class="field-note">
+              <span class="module-label">Field note: Tours vs independent</span>
+              <p>Tours feel easier on Day 1 for a reason.</p>
+              <p>Morning start? You arrived the night before and naturally rested.</p>
+              <p>Afternoon or evening start? You hit the ground running, but with structure already in place.</p>
+              <p>You know where to be and when before you even leave home.</p>
+              <p>Your Tour Director reaches out. There’s clarity.</p>
+              <p>Sometimes rooms are ready earlier because of existing relationships.</p>
+              <p>You’ve got someone to ask. Someone visible. Someone who knows the area.</p>
+              <p>Then you meet the group. Energy lifts.</p>
+              <p>No hiding in the room. No drifting into a bad sleep pattern.</p>
+              <p>Dinner, introductions, structure — then rest.</p>
+            </div>
+
+            <div class="bottom-line">
+              <p><strong>Bottom line:</strong> Arrival day is not where you prove anything.</p>
+              <p>It’s where you avoid digging a hole you spend two days climbing out of.</p>
+              <p>Ease into it.</p>
+              <p>No big plans.</p>
+            </div>
+
+          </div>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <aside class="tracker" aria-label="Reading progress">
+    <div class="tracker-label" data-tracker-label><span>Chapter 01</span> Before You Go</div>
+    <div>
+      <div class="tracker-rail" aria-hidden="true"><span class="tracker-fill" data-tracker-fill></span></div>
+      <div class="tracker-dots" aria-hidden="true">
+        <a class="tracker-dot is-active" href="#before-you-go">Before You Go</a>
+        <a class="tracker-dot" href="#the-pattern">The Pattern</a>
+        <a class="tracker-dot" href="#tour-vs-independent">Tour vs Independent</a>
+        <a class="tracker-dot" href="#trip-structure">Trip Structure</a>
+        <a class="tracker-dot" href="#structuring-a-day">Structuring a Day</a>
+        <a class="tracker-dot" href="#arrival-day">Arrival Day</a>
+      </div>
+    </div>
+  </aside>
+
+  <script>
+    const chapters = [
+      { id: "before-you-go", label: "Before You Go" },
+      { id: "the-pattern", label: "The Pattern" },
+      { id: "tour-vs-independent", label: "Tour vs Independent" },
+      { id: "trip-structure", label: "Trip Structure" },
+      { id: "structuring-a-day", label: "Structuring a Day" },
+      { id: "arrival-day", label: "Arrival Day" }
+    ].map((chapter) => ({ ...chapter, el: document.getElementById(chapter.id) }));
+
+    const fill = document.querySelector("[data-tracker-fill]");
+    const label = document.querySelector("[data-tracker-label]");
+    const dots = Array.from(document.querySelectorAll(".tracker-dot"));
+
+    function updateTracker() {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = maxScroll > 0 ? Math.min(scrollTop / maxScroll, 1) : 0;
+      fill.style.width = `${progress * 100}%`;
+
+      const probe = scrollTop + window.innerHeight * 0.35;
+      let active = 0;
+
+      chapters.forEach((chapter, index) => {
+        if (chapter.el && chapter.el.offsetTop <= probe) active = index;
+      });
+
+      const number = String(active + 1).padStart(2, "0");
+      label.innerHTML = `<span>Chapter ${number}</span> ${chapters[active].label}`;
+
+      dots.forEach((dot, index) => {
+        dot.classList.toggle("is-active", index === active);
+        dot.classList.toggle("is-read", index < active);
+      });
+    }
+
+    updateTracker();
+    window.addEventListener("scroll", updateTracker, { passive: true });
+    window.addEventListener("resize", updateTracker);
+  </script>
+</body>
+</html>

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Europe Travel Checklist | From a Tour Director</title>
+  <meta name="description" content="A practical Europe travel checklist from a Tour Director, covering documents, packing, arrival day, money, medication, luggage, and the small things travellers often overlook." />
+  <style>
+    :root {
+      --ink: #1f1d1a;
+      --muted: #665d53;
+      --soft: #f6f0e7;
+      --paper: #fffaf2;
+      --line: #ded3c4;
+      --accent: #7a3f25;
+      --accent-soft: #efe1d2;
+      --green: #344e41;
+      --green-soft: #e6eee8;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { background: #e9dfd2; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.52;
+      background: #e9dfd2;
+    }
+
+    .print-tip {
+      max-width: 210mm;
+      margin: 16px auto 0;
+      padding: 14px 18px;
+      background: #1f1d1a;
+      color: #fffaf2;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      border-radius: 10px;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 24px auto;
+      padding: 22mm 20mm;
+      background: var(--paper);
+      box-shadow: 0 18px 60px rgba(31, 29, 26, 0.16);
+    }
+
+    .cover {
+      border-bottom: 2px solid var(--line);
+      padding-bottom: 15mm;
+      margin-bottom: 10mm;
+    }
+
+    .kicker {
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-weight: 800;
+      font-size: 10pt;
+      color: var(--accent);
+      margin-bottom: 7mm;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 35pt;
+      line-height: 0.98;
+      letter-spacing: -0.055em;
+      max-width: 155mm;
+    }
+
+    .subtitle {
+      margin: 7mm 0 0;
+      max-width: 145mm;
+      color: var(--muted);
+      font-size: 15pt;
+    }
+
+    .intro-box {
+      margin-top: 10mm;
+      padding: 7mm;
+      border-left: 5px solid var(--accent);
+      background: var(--soft);
+      font-size: 12.5pt;
+    }
+
+    .section {
+      break-inside: avoid;
+      page-break-inside: avoid;
+      margin: 9.5mm 0 0;
+      padding-top: 1mm;
+    }
+
+    .section h2 {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 4mm;
+      font-size: 19pt;
+      line-height: 1.1;
+      letter-spacing: -0.035em;
+      color: var(--ink);
+    }
+
+    .section h3 {
+      margin: 6mm 0 2mm;
+      font-size: 14pt;
+      line-height: 1.2;
+      color: var(--accent);
+    }
+
+    .item {
+      margin: 0 0 5.5mm;
+      padding: 5mm 5.5mm;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      background: rgba(255,255,255,0.32);
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .item-title {
+      margin: 0 0 2mm;
+      font-size: 12.5pt;
+      font-weight: 800;
+      color: var(--ink);
+    }
+
+    p {
+      margin: 0 0 3mm;
+      font-size: 11.3pt;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      margin: 0 0 3mm;
+      padding-left: 5.5mm;
+    }
+
+    li {
+      margin: 0 0 2.5mm;
+      padding-left: 1mm;
+      font-size: 11.3pt;
+    }
+
+    strong { color: var(--ink); }
+
+    .emphasis {
+      font-style: italic;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .note {
+      margin: 4mm 0 0;
+      padding: 4mm 5mm;
+      background: var(--accent-soft);
+      border-radius: 7px;
+      color: var(--ink);
+      font-size: 11.3pt;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .note strong { color: var(--accent); }
+
+    .mini-divider {
+      height: 1px;
+      background: var(--line);
+      margin: 4mm 0;
+    }
+
+    .page-break {
+      break-before: page;
+      page-break-before: always;
+    }
+
+    .quick-check {
+      margin-top: 12mm;
+      padding: 8mm;
+      background: var(--green);
+      color: #fffaf2;
+      border-radius: 10px;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .quick-check h2,
+    .upsell h2 {
+      margin-top: 0;
+      color: inherit;
+    }
+
+    .quick-check li { color: #f7efe2; }
+
+    .quick-check .note {
+      background: rgba(255,255,255,0.13);
+      color: #fffaf2;
+    }
+
+    .upsell {
+      margin-top: 11mm;
+      padding: 9mm;
+      border: 2px solid var(--accent);
+      border-radius: 10px;
+      background: #fff7ed;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .upsell h2 {
+      font-size: 23pt;
+      line-height: 1.05;
+      letter-spacing: -0.045em;
+      color: var(--ink);
+      margin-bottom: 4mm;
+    }
+
+    .upsell-lead {
+      font-size: 13pt;
+      color: var(--ink);
+      margin-bottom: 4mm;
+    }
+
+    .placeholder-link {
+      display: inline-block;
+      margin-top: 4mm;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 800;
+      color: var(--accent);
+      font-size: 11pt;
+    }
+
+    .footer {
+      margin-top: 12mm;
+      padding-top: 5mm;
+      border-top: 1px solid var(--line);
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--muted);
+      font-size: 9pt;
+      display: flex;
+      justify-content: space-between;
+      gap: 10mm;
+    }
+
+    @media print {
+      @page { size: A4; margin: 0; }
+
+      html,
+      body {
+        width: 210mm;
+        min-height: 297mm;
+        background: white;
+      }
+
+      .print-tip { display: none; }
+
+      .page {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0;
+        padding: 20mm 18mm;
+        box-shadow: none;
+        background: var(--paper);
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .section,
+      .item,
+      .quick-check,
+      .upsell {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+    }
+
+    @media screen and (max-width: 820px) {
+      .page {
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        padding: 28px;
+        box-shadow: none;
+      }
+
+      h1 { font-size: 42px; }
+      .print-tip { display: none; }
+      .footer { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="print-tip">
+    PDF export tip: Print this page → Save as PDF → Paper size A4 → Background graphics ON → Margins: None or Default.
+  </div>
+
+  <main class="page">
+    <section class="cover">
+      <div class="kicker">Free Europe prep checklist</div>
+      <h1>Europe Travel Checklist</h1>
+      <p class="subtitle">The simple stuff that makes a big difference once you’re actually on the road.</p>
+      <div class="intro-box">
+        Written from a Tour Director’s point of view: practical, realistic, and focused on the small things travellers often overlook before leaving home.
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>✈️ Before You Leave</h2>
+
+      <div class="item">
+        <p class="item-title">Passport — check expiry</p>
+        <p>You want at least 6 months left… the amount of tours I’ve started with people missing for this exact reason.</p>
+        <p>They couldn’t leave the country. Airlines won’t let you fly.</p>
+        <p>Have hard copies and soft copies saved securely in the cloud.</p>
+        <p>Where are you actually keeping it? Travel days? Walking around cities? Do you need it on you? Vatican? ID checks? Police?</p>
+        <p>Can you trust the hotel safe? Do you carry it?</p>
+        <p class="emphasis">👉 Don’t leave this as a “figure it out later” thing.</p>
+      </div>
+
+      <div class="item">
+        <p class="item-title">Bank / cards — make sure they’ll work overseas</p>
+        <p>Know your PIN properly, off by heart.</p>
+        <p>I’ve seen people pull out brand new travel cards… PIN written on a piece of paper in the wallet.</p>
+        <p><strong>Insurance won’t cover that.</strong> They’ll call it negligence.</p>
+        <p>If it’s a new card, try it at home first. Know what number you’re calling from abroad if it doesn’t work.</p>
+        <p class="emphasis">👉 When things go wrong, you’re rarely calm and composed.</p>
+      </div>
+
+      <div class="item">
+        <p class="item-title">Travel insurance — have a rough idea what it covers</p>
+        <p>Flight delay? Missed connection? Lost luggage?</p>
+        <p>If you bought it through a tour operator, they usually can’t confirm details.</p>
+        <p>They’re not the insurer. Totally normal.</p>
+        <p class="emphasis">👉 Worth opening the policy and skimming the key bits.</p>
+      </div>
+
+      <div class="item">
+        <p class="item-title">Copies of documents — passport, insurance, tickets</p>
+        <p>I scan them, print them, fold them, and keep them in a zip-lock in my suitcase.</p>
+        <p>Phone copy + physical backup = covered.</p>
+      </div>
+
+      <div class="item">
+        <p class="item-title">Arrival plan — how are you getting from the airport to your hotel?</p>
+        <p>Got Uber? Check it now.</p>
+        <p>Look at time + price at the same time of day you’re arriving. Traffic matters.</p>
+        <p>Booked a transfer?</p>
+        <p class="emphasis">👉 You’re not getting ripped off — you’re paying for reliability.</p>
+      </div>
+
+      <p class="note"><strong>Have all of this sorted early.</strong><br>Not in the last few days when everything speeds up.<br><br>After a long flight, somewhere unfamiliar… simple things suddenly aren’t simple.</p>
+    </section>
+
+    <section class="section page-break">
+      <h2>🧳 Packing — the realistic version</h2>
+
+      <div class="item">
+        <p class="item-title">Layers &gt; outfits</p>
+        <p>Weather moves. Don’t pack like it won’t.</p>
+        <p>Check a 10–14 day forecast. Webcams help more than you’d think.</p>
+      </div>
+
+      <div class="item">
+        <p class="item-title">Comfortable shoes — already worn in</p>
+        <p>Not brand new. Ever.</p>
+        <p>Cobblestones, uneven streets, walking everywhere…</p>
+        <p class="emphasis">👉 I’ve seen people hit 10–20k steps a day without planning to.</p>
+        <p>Start walking now.</p>
+        <ul>
+          <li>proper band-aids — fabric ones</li>
+          <li>expect stairs — bathrooms are often downstairs</li>
+          <li>showers are often bath/shower combos</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <p class="item-title">Plug adapter</p>
+        <p>UK ≠ Europe</p>
+        <p>Switzerland ≠ Italy</p>
+        <p class="emphasis">👉 Want to charge your phone from bed? Good luck if you haven’t thought this through.</p>
+      </div>
+
+      <div class="item">
+        <p class="item-title">Medication</p>
+        <ul>
+          <li>Bring what you need + a little extra.</li>
+          <li>Keep it in your carry-on.</li>
+        </ul>
+        <p>You’re out for the day… medication back in the hotel?</p>
+        <p class="emphasis">👉 No good.</p>
+        <p>On a coach tour, if it’s under the coach in your suitcase?</p>
+        <p class="emphasis">👉 You’re not getting it easily.</p>
+      </div>
+
+      <div class="item">
+        <p class="item-title">Luggage</p>
+        <ul>
+          <li>You’ll move it more than you think.</li>
+          <li>Hotel rooms aren’t built for big suitcases.</li>
+        </ul>
+        <p>Big bed = less space. That’s often the trade.</p>
+        <p>Travelling with a partner?</p>
+        <p class="emphasis">👉 It rarely stays “your suitcase / my suitcase”.</p>
+        <p>Things move. Plan for it.</p>
+        <div class="mini-divider"></div>
+        <p>Pack so you can actually manage it yourself.</p>
+        <p>Lifting it onto a bed? Moving it in a tight room?</p>
+        <p class="emphasis">👉 If it’s awkward at home, it’s worse when you’re tired.</p>
+      </div>
+
+      <p class="note"><strong>Tour Director note:</strong> Every year I see people bring too much… and deal with it every single day after that.</p>
+    </section>
+
+    <section class="section">
+      <h2>🛬 Arrival Day</h2>
+      <div class="item">
+        <ul>
+          <li>Don’t plan anything major.</li>
+          <li>Expect to feel tired or slightly off.</li>
+          <li>Know your hotel name and address.</li>
+          <li>Give yourself time to settle in.</li>
+        </ul>
+      </div>
+      <div class="item">
+        <p class="item-title">Joining a tour?</p>
+        <p>Arrive a day or two early if you can.</p>
+        <ul>
+          <li>Day 1: arrive + recover.</li>
+          <li>Day 2: light exploring.</li>
+          <li>Day 3: start properly.</li>
+        </ul>
+      </div>
+      <p class="note"><strong>Tour Director note:</strong> The first day quietly sets the tone… most people realise that after they’ve pushed it too far.</p>
+    </section>
+
+    <section class="section">
+      <h2>💳 Money</h2>
+      <div class="item">
+        <ul>
+          <li>Card that works internationally.</li>
+          <li>Small amount of local cash.</li>
+          <li>Contactless works almost everywhere.</li>
+        </ul>
+        <p>…but not everywhere.</p>
+        <p>Laundry, tips, smaller places — still cash.</p>
+        <p class="emphasis">👉 Running out of cash at the wrong moment happens more than you’d expect.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>🧠 The Stuff People Don’t Think About</h2>
+      <div class="item">
+        <p><strong>Jet lag</strong> is worse than expected.</p>
+        <p><strong>Overpacking</strong> becomes a daily frustration.</p>
+        <p class="emphasis">👉 Not once… every day.</p>
+        <div class="mini-divider"></div>
+        <p><strong>Free time</strong> feels shorter than you think.</p>
+        <p>People plan what they want to do, not how long things actually take.</p>
+        <div class="mini-divider"></div>
+        <p><strong>Small logistics matter.</strong></p>
+        <p>Bags, timing, directions…</p>
+        <p class="emphasis">👉 This is what quietly shapes the whole trip.</p>
+      </div>
+      <p class="note">You can’t see everything. People live in these cities their whole lives and still haven’t seen it all.<br><br>Sit down. Have a coffee. Watch the world go by. That’s part of it.</p>
+    </section>
+
+    <section class="quick-check">
+      <h2>✔️ Quick Final Check</h2>
+      <p>Before you leave:</p>
+      <ul>
+        <li>I know how I’m getting to my first hotel.</li>
+        <li>I’ve packed for comfort, not just photos.</li>
+        <li>I’ve kept day one simple.</li>
+      </ul>
+      <p class="note">If you’ve got that, you’re already ahead of most travellers.</p>
+    </section>
+
+    <section class="upsell">
+      <h2>Want the full version?</h2>
+      <p class="upsell-lead">This checklist is the surface.</p>
+      <p>The difference between a smooth trip and a frustrating one is usually how everything fits together.</p>
+      <p>Do you want to spend your trip focusing on the experience… or catching up on things that could have been sorted before you left?</p>
+      <p>Being prepared properly saves stress later — and these are things no one can do for you once you’re on the road.</p>
+      <p>What this guide does is walk you through it properly:</p>
+      <ul>
+        <li>what actually matters before you leave</li>
+        <li>whether a tour really suits you — and when it doesn’t</li>
+        <li>how to structure your trip so it flows</li>
+        <li>the patterns I see every single departure</li>
+      </ul>
+      <p>When you think about what you’re already spending — flights, hotels, luggage, time — getting this part right?</p>
+      <p class="emphasis">👉 It’s a no-brainer.</p>
+      <a href="#" class="placeholder-link">Check out the full guide →</a>
+    </section>
+
+    <footer class="footer">
+      <div>Europe Travel Checklist</div>
+      <div>From a Tour Director · Practical travel advice from the road</div>
+    </footer>
+  </main>
+</body>
+</html>
